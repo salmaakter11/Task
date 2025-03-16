@@ -36,6 +36,10 @@ header {
     -ms-flex-align: center;
     align-items: center;
 }
+.navbar-collapse.collapse.show {
+    background-color: #1e3a8a;
+    padding: 20px;
+}
 
 .navbar {
     background: transparent !important;
