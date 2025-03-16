@@ -1,76 +1,49 @@
 
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
-const Category = () => {
-    return (
-        <>
-            <section className=" text-center section-bg ">
-                <div className="container">
-                    <div className="search-bar">
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Search by product/treatment"
-                        />
-                        <i className="fas fa-search search-icon" />
-                    </div>
-                    <h2 className="mt-4">
-                        Shop By <span style={{ color: "#f4c430" }}>Category</span>
-                    </h2>
-                    <div className="category-container">
-                        <div
-                            className="category-card"
-                            style={{ backgroundImage: 'url("assets/image/Weight Loss.jfif")' }}
-                        >
-                            <div className="category-overlay" />
-                            <div className="category-text">Weight Loss</div>
-                        </div>
-                        <div
-                            className="category-card"
-                            style={{ backgroundImage: 'url("assets/image/Health.jpg")' }}
-                        >
-                            <div className="category-overlay" />
-                            <div className="category-text">Sexual Health</div>
-                        </div>
-                        <div
-                            className="category-card"
-                            style={{ backgroundImage: 'url("assets/image/brain-health.jfif")' }}
-                        >
-                            <div className="category-overlay" />
-                            <div className="category-text">Brain Health</div>
-                        </div>
-                        <div
-                            className="category-card"
-                            style={{ backgroundImage: 'url("assets/image/Testosterone.jfif")' }}
-                        >
-                            <div className="category-overlay" />
-                            <div className="category-text">Testosterone HRT</div>
-                        </div>
-                        <div
-                            className="category-card"
-                            style={{
-                                backgroundImage: 'url("assets/image/athletic-performance.jfif")'
-                            }}
-                        >
-                            <div className="category-overlay" />
-                            <div className="category-text">Athletic Performance</div>
-                        </div>
-                        <div
-                            className="category-card"
-                            style={{ backgroundImage: 'url("assets/image/beauty-hair-loss.jpg")' }}
-                        >
-                            <div className="category-overlay" />
-                            <div className="category-text">Beauty and Hair Loss</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+const categories = [
+  { name: "Weight Loss", image: "assets/image/athletic-performance.jfif" },
+  { name: "Sexual Health", image: "assets/image/Health.jpg" },
+  { name: "Brain Health", image: "assets/image/brain-health.jfif" },
+  { name: "Testosterone HRT", image: "assets/image/Testosterone.jfif" },
+  { name: "Athletic Performance", image: "assets/image/athletic-performance.jfif" },
+  { name: "Beauty and Hair Loss", image: "assets/image/beauty-hair-loss.jpg" }
+];
 
-        </>
-    )
-}
+const ShopByCategory = () => {
+  return (
+    <section className="text-center section-bg">
+      <div className="container">
+        <div className="search-bar">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search by product/treatment"
+          />
+          <i className="fas fa-search search-icon" />
+        </div>
+        <h2 className="mt-4">
+          Shop By <span style={{ color: "#f4c430" }}>Category</span>
+        </h2>
+        <div className="category-container">
+          {categories.map((category, index) => (
+            <div
+              key={index}
+              className="category-card"
+              style={{ backgroundImage: `url(${category.image})` }}
+            >
+              <div className="category-overlay" />
+              <div className="category-text">{category.name}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Category
+export default ShopByCategory;
+
 
 
 // import React, { useEffect, useState } from 'react';
