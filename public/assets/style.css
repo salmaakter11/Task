@@ -1,0 +1,484 @@
+body {
+    background: linear-gradient(135deg, #1b2232, #2c1f5b, #952464);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+header {
+    background: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:assets/image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navbar {
+    background: transparent !important;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: white;
+}
+
+.search-bar {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.category-card {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+}
+
+.category-card .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.bg-banner {
+    background: url('../assts/assets/image/bg.png') no-repeat center center/cover;
+    padding: 200px 0;
+}
+
+.section-bg {
+    background: url('../assts/assets/image/bg.png') no-repeat center center/cover;
+    padding: 4px;
+}
+
+.banner-text {
+    font-size: 4.5rem;
+}
+
+
+
+
+.search-bar {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 35px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.category-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+}
+
+.category-text {
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+    font-size: 19px;
+    font-weight: bold;
+    top: 12px;
+}
+
+@media (max-width: 600px) {
+    .category-card {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .category-card {
+        max-width: 100%;
+        height: 200px;
+    }
+}
+
+
+
+.nav-tabs .nav-link {
+    background: #222;
+    color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    background: gold;
+    color: black;
+}
+
+.product-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: gold;
+    font-weight: bold;
+}
+
+.cart-btn {
+    background: gold;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5c242;
+}
+
+.price {
+    color: #ddd;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+
+.cart-button:hover {
+    background: #ff9900;
+}
+
+.cart-icon {
+    margin-left: 5px;
+}
+
+.product-card {
+    width: 280px;
+    background: #26284d;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 37px;
+    height: 300px;
+}
+
+.research-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #d46b40;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.product-name {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.price {
+    font-size: 16px;
+    color: #e2b55a;
+    flex: 1;
+    text-align: left;
+}
+
+.cart-button {
+    background: #e2b55a;
+    color: black;
+    border: none;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 41px;
+    transition: 0.3s;
+}
+
+.cart-button:hover {
+    background: #cfa04d;
+}
+
+.cart-icon {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .product-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .product-name {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .cart-button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-name {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .cart-button {
+        width: 100%;
+    }
+}
+
+
+.testimonial-card {
+    background: #12141d;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stars {
+    color: #f5a623;
+}
+
+
+.testimonial-card {
+    background: #12141d;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stars {
+    color: #f5a623;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text-muted {
+    font-size: 14px;
+}
+
+
+.footer {
+    background: linear-gradient(to bottom, #1e3a8a, #0f172a);
+    padding: 70px;
+}
+
+.footer a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.list-unstyled li {
+    margin-bottom: 18px;
+}
+
+.newsletter-box {
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+.newsletter-box input {
+    background: none;
+    border: 1px solid #ffffff;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.newsletter-box button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.footer-logo {
+    font-size: 225px;
+    font-weight: bold;
+    opacity: 0.1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-logo2 {
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 0.1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hipaa-badge {
+    margin-top: 15px;
+    display: block;
+    width: 120px;
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        font-size: 50px;
+    }
+}
