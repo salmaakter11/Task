@@ -12,8 +12,8 @@ const Convenient = () => {
                     <div className="row align-items-center">
                         <div className="col-xl-6">
                             <div>
-                                <h2>100% Online,</h2>
-                                <h2>100% Convenient</h2>
+                                <h1>100% Online,</h1>
+                                <h1>100% Convenient</h1>
                             </div>
                         </div>
                         <div className="col-xl-6">
