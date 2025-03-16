@@ -481,9 +481,13 @@ header {
     width: 120px;
 }
 @media (max-width: 768px) { 
-    .footer-logo2 {
-        font-size: 15px;
-    }
+   .footer-logo2 {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.1;
+    text-transform: uppercase;
+    text-align: center;
+}
 }
 @media (max-width: 768px) {
     .footer-logo {
