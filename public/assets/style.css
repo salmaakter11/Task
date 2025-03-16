@@ -480,7 +480,11 @@ header {
     display: block;
     width: 120px;
 }
-
+@media (max-width: 768px) { 
+    .footer-logo2 {
+        font-size: 15px;
+    }
+}
 @media (max-width: 768px) {
     .footer-logo {
         font-size: 50px;
