@@ -10,7 +10,7 @@ const Footer = () => {
                         {/* Newsletter Signup Box */}
                         <div className="col-md-4 text-center">
                             <div className="newsletter-box">
-                                <h5>Let's Stay In Touch</h5>
+                                <h5>Let's Stay In Touch </h5>
                                 <p>Keep up to date with our latest news &amp; specials.</p>
                                 <div className="input-group">
                                     <input
